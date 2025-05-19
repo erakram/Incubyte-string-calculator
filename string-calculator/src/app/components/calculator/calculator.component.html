@@ -1,1 +1,9 @@
-<p>calculator works!</p>
+<div class="container">
+    <h2>String Calculator</h2>
+    <textarea [(ngModel)]="input" rows="4" cols="50" placeholder="Enter numbers"></textarea>
+    <br />
+    <button (click)="calculate()">Calculate</button>
+  
+    <div class="result" *ngIf="result !== null">Result: {{ result }}</div>
+    <div class="error" *ngIf="error">{{ error }}</div>
+</div>
