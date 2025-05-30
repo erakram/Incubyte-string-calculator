@@ -9,5 +9,5 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'string-calculator';
+  title = 'String Calculator';
 }

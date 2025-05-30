@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <h2>String Calculator</h2>
     <textarea [(ngModel)]="input" rows="4" cols="50" placeholder="Enter numbers"></textarea>
     <br />
@@ -6,4 +6,73 @@
   
     <div class="result" *ngIf="result !== null">Result: {{ result }}</div>
     <div class="error" *ngIf="error">{{ error }}</div>
-</div>
+</div> -->
+
+<!-- <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100">
+    <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md text-center">
+      <h1 class="text-3xl font-bold text-purple-700 mb-4">String Calculator</h1>
+  
+      <input
+        [(ngModel)]="inputString"
+        placeholder="Enter numbers (e.g., 1,2 or //;\n1;2)"
+        class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-purple-400"
+      />
+  
+      <button
+        (click)="calculate()"
+        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-2 rounded-full transition duration-200 shadow-md"
+      >
+        Calculate
+      </button>
+  
+      <div *ngIf="result !== null" class="mt-6 text-xl font-semibold text-green-600">
+        Result: {{ result }}
+      </div>
+  
+      <div *ngIf="error" class="mt-4 text-red-500 text-sm">
+        {{ error }}
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card">
+    <h1>String Calculator</h1>
+  
+    <input
+      [(ngModel)]="inputString"
+      placeholder="Enter numbers (e.g., 1,2 or //;\n1;2)"
+    />
+  
+    <button (click)="calculate()">Calculate</button>
+  
+    <div *ngIf="result !== null" class="result">
+      Result: {{ result }}
+    </div>
+  
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+  </div>
+
+  <!-- <div class="card" @fadeIn>
+    <h1>String Calculator</h1>
+  
+    <input
+      [(ngModel)]="inputString"
+      placeholder="Enter numbers (e.g., 1,2 or //;\n1;2)"
+      @slideIn
+    />
+  
+    <button (click)="calculate()" @slideIn>Calculate</button>
+  
+    <div *ngIf="result !== null" class="result" @fadeIn>
+      Result: {{ result }}
+    </div>
+  
+    <div *ngIf="error" class="error" @fadeIn>
+      {{ error }}
+    </div>
+  </div> -->
+  
+  
+  

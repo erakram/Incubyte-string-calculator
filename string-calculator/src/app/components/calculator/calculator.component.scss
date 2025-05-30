@@ -1,29 +1,98 @@
-.container {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
+// .container {
+//     max-width: 500px;
+//     margin: auto;
+//     text-align: center;
   
-    textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
+//     textarea {
+//       width: 100%;
+//       padding: 8px;
+//       margin-bottom: 10px;
+//       font-size: 1rem;
+//     }
   
-    button {
-      padding: 8px 16px;
-      font-size: 1rem;
-    }
+//     button {
+//       padding: 8px 16px;
+//       font-size: 1rem;
+//     }
   
-    .result {
-      margin-top: 15px;
-      font-weight: bold;
-      color: green;
-    }
+//     .result {
+//       margin-top: 15px;
+//       font-weight: bold;
+//       color: green;
+//     }
   
-    .error {
-      margin-top: 15px;
-      color: red;
+//     .error {
+//       margin-top: 15px;
+//       color: red;
+//     }
+//   }
+  
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0f7fa, #ede7f6);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6b21a8;
+    margin-bottom: 1.5rem;
+  }
+
+  input {
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: #a78bfa;
+      box-shadow: 0 0 0 2px #c4b5fd;
     }
   }
-  
+
+  button {
+    background-color: #7c3aed;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #6b21a8;
+    }
+  }
+
+  .result {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #16a34a;
+  }
+
+  .error {
+    margin-top: 1rem;
+    color: #dc2626;
+    font-size: 0.9rem;
+  }
+}
