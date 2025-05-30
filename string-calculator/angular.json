@@ -18,6 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/string-calculator",
+            "baseHref": "/Incubyte-string-calculator/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
